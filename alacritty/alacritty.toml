@@ -1,0 +1,17 @@
+import = ["/home/sweglord227/.config/alacritty/themes/carbon_fox.toml"]
+
+[cursor.style]
+blinking = "Always"
+shape = "Block"
+
+[font]
+size = 12
+
+[font.normal]
+family = "BigBlueTermPlus Nerd Font"
+
+[window]
+dynamic_padding = true
+opacity = 0.6
+resize_increments = true
+title = "Terminal"
