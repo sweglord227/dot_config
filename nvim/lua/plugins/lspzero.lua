@@ -83,6 +83,9 @@ return {
 			{'hrsh7th/cmp-nvim-lsp'},
 			{'williamboman/mason-lspconfig.nvim'},
 		},
+		opts = {
+			autoformat = false,
+		},
 		config = function()
 			-- This is where all the LSP shenanigans will live
 			local lsp_zero = require('lsp-zero')
@@ -94,6 +97,13 @@ return {
 				lsp_zero.default_keymaps({buffer = bufnr})
 			end)
 
+			vim.g.rustaceanvim = {
+				server = {
+					capabilities = lsp_zero.get_capabilities()
+				},
+			}
+
+			require('mason').setup({})
 			require('mason-lspconfig').setup({
 				ensure_installed = {},
 				handlers = {
@@ -103,9 +113,7 @@ return {
 						local lua_opts = lsp_zero.nvim_lua_ls()
 						require('lspconfig').lua_ls.setup(lua_opts)
 					end,
-					rust_analyzer = function()
-						-- require('lspconfig').rust_analyzer()
-					end,
+					rust_analyzer = lsp_zero.noop,
 				}
 			})
 		end
