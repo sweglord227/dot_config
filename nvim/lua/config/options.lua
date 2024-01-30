@@ -1,22 +1,35 @@
-vim.opt.nu = true
+local vim = vim
+local opt = vim.opt
+-- Uhh
+opt.nu = true
 
-vim.opt.tabstop = 8
-vim.opt.softtabstop = 8
-vim.opt.shiftwidth = 8
-vim.opt.expandtab = true
+-- Tabs / Indens
+opt.tabstop = 8
+opt.softtabstop = 8
+opt.shiftwidth = 8
+opt.expandtab = true
+opt.smartindent = true
 
-vim.opt.smartindent = true
+-- Search
+opt.hlsearch = false
+opt.incsearch = true
 
-vim.opt.undofile = true
+opt.termguicolors = true
 
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
+opt.scrolloff = 15
 
--- Breaks theme :(
--- vim.opt.termguicolors = true
+opt.updatetime = 80
 
-vim.opt.scrolloff = 15
+opt.undofile = true
 
-vim.opt.updatetime = 80
+vim.wo.relativenumber = true
 
- vim.api.nvim_set_option("clipboard","unnamed")
+vim.api.nvim_set_option("clipboard","unnamed")
+
+opt.foldmethod = "expr"
+
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+
+opt.foldcolumn = '1'
+
+-- opt.fillchars = 
