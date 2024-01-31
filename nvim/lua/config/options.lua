@@ -32,9 +32,6 @@ opt.foldexpr = "nvim_treesitter#foldexpr()"
 
 opt.foldcolumn = '1'
 
-<<<<<<< HEAD
-=======
 opt.foldlevel = 99
 
->>>>>>> 991f3f7 (resync)
 -- opt.fillchars = 

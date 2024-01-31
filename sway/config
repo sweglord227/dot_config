@@ -64,12 +64,7 @@ input type:touchpad {
 
 bindsym $mod+Return exec alacritty
 bindsym $mod+F2 exec firefox --enable-features=UseOzonePlatform --ozone-platform=wayland
-<<<<<<< HEAD
-bindsym $mod+F12 exec grimshot copy anything
-bindsym $mod+Shift+F12 exec grimshot save anything ~/Pictures/ss.png
-=======
 bindsym $mod+F12 exec grimblast --freeze copysave area ~/Pictures/ss.png
->>>>>>> 991f3f7 (resync)
 
 # Kill focused window
 bindsym $mod+Shift+q kill
