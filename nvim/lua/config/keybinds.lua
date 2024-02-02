@@ -1,6 +1,6 @@
 local map = vim.keymap
 local cmd = vim.cmd
-map.set("n", "<leader>pv", vim.cmd.Ex)
+map.set("n", "<leader>pv", vim.cmd.Oil)
 
 -- Tabs
 map.set("n", "<C-u>", cmd.tabnew)
