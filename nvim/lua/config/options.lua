@@ -1,7 +1,11 @@
 local vim = vim
 local opt = vim.opt
+
 -- Uhh
 opt.nu = true
+
+-- Line Highlighting
+opt.cursorline = true
 
 -- Tabs / Indens
 opt.tabstop = 8
