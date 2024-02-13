@@ -13,18 +13,10 @@ map.set("n", "<leader>k", "zR")
 
 -- Telescope
 local builtin = require('telescope.builtin')
-<<<<<<< HEAD
 map.set('n', '<leader>pf', builtin.find_files, {})
-=======
-map.set('n', '<leader>pv', builtin.find_files, {})
->>>>>>> refs/remotes/origin/main
 map.set('n', '<leader>pg', builtin.live_grep, {})
 map.set('n', '<leader>pb', builtin.buffers, {})
 map.set('n', '<leader>ph', builtin.help_tags, {})
 
 -- Oil File Manager
-<<<<<<< HEAD
 map.set("n", "<leader>pv", vim.cmd.Oil)
-=======
-map.set("n", "<leader>pV", vim.cmd.Oil)
->>>>>>> refs/remotes/origin/main
