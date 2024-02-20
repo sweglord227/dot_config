@@ -12,6 +12,6 @@ family = "BigBlueTermPlus Nerd Font"
 
 [window]
 dynamic_padding = true
-opacity = 0.6
+opacity = 0.3
 resize_increments = true
 title = "Terminal"
