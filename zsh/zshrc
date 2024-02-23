@@ -132,6 +132,8 @@ KEYTIMEOUT=5
 # Fix unable to backspace after exiting vi mode
 bindkey "^?" backward-delete-char
 
+
+alias gamescope='gamescope -W 1920 -H 1080 -r 120 -S stretch --expose-wayland -e --rt -f'
 alias vi='nvim'
 alias vim='nvim'
 alias pi='sudo pacman -S'
@@ -146,6 +148,6 @@ alias ip='ip -c'
 alias time='/usr/bin/time'
 alias fetch='fastfetch'
 
-eval "$(zoxide init --cmd cd bash)"
+eval "$(zoxide init --cmd cd zsh)"
 
 # PS1='\[\e[1;00m\]┌──\[\e[1;32m\][\u@\h]\[\e[1;00m\]─\[\e[1;37m\](\w)\n\[\e[1;00m\]└─\[\e[0;00m\]\$ '
