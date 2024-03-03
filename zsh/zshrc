@@ -79,22 +79,9 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-### PRE OMZSH
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.history
 HISTSIZE=1000
@@ -139,7 +126,7 @@ alias vim='nvim'
 alias pi='sudo pacman -S'
 alias pu='sudo pacman -Syu'
 alias pr='sudo pacman -R'
-alias ls='ls -Flh --color=auto'
+alias ls='eza -lh --git'
 alias grep='grep --color=auto'
 alias fuck='sudo $(history -p !!)'
 alias shit='shutdown now'
