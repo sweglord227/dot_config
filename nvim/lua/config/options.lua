@@ -28,7 +28,7 @@ opt.undofile = true
 
 vim.wo.relativenumber = true
 
-vim.api.nvim_set_option("clipboard","unnamed")
+vim.api.nvim_set_option("clipboard","unnamedplus")
 
 opt.foldmethod = "expr"
 
