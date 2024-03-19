@@ -9,6 +9,7 @@ size = 12
 
 [font.normal]
 family = "BigBlueTermPlus Nerd Font"
+# family = "Monospace"
 
 [window]
 dynamic_padding = true
