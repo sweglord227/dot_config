@@ -77,8 +77,9 @@
                         "spacing": 10
                 },
                 "clock": {
+                        "interval": 1,
                         "timezone": "America/Indianapolis",
-                        "tooltip-format": "<big>{:%H:%M:%S | %d-%m-%y}</big>\n<tt><small>{calendar}</small></tt>",
+                        "format": "{:%H:%M:%S  %d-%m-%y}",
                         // "format-alt": "{:%Y-%m-%d}"
                 },
                 "cpu": {
@@ -102,6 +103,7 @@
                         "format-icons": ["", "", "", "", "", "", "", "", ""]
                 },
                 "battery": {
+                        "interval": 1,
                         "states": {
                                 "good": 60,
                                 "warning": 30,
