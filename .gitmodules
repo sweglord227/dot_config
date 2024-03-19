@@ -1,0 +1,6 @@
+[submodule "zsh/zsh/lf-gagets"]
+	path = zsh/zsh/lf-gagets
+	url = git@github.com:slavistan/lf-gadgets.git
+[submodule "zsh/lf-gagets"]
+	path = zsh/lf-gagets
+	url = git@github.com:slavistan/lf-gadgets.git
