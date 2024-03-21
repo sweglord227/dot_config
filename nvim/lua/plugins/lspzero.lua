@@ -65,10 +65,10 @@ return {
 							fallback()
 						end
 					end, { "i", "s" }),
-					['<C-u>'] = cmp.mapping.scroll_docs(-4),
-					['<C-d>'] = cmp.mapping.scroll_docs(4),
-					['<C-f>'] = cmp_action.luasnip_jump_forward(),
-					['<C-b>'] = cmp_action.luasnip_jump_backward(),
+					-- ['<C-u>'] = cmp.mapping.scroll_docs(-4),
+					-- ['<C-d>'] = cmp.mapping.scroll_docs(4),
+					-- ['<C-f>'] = cmp_action.luasnip_jump_forward(),
+					-- ['<C-b>'] = cmp_action.luasnip_jump_backward(),
 				})
 			})
 		end
@@ -113,6 +113,11 @@ return {
 						local lua_opts = lsp_zero.nvim_lua_ls()
 						require('lspconfig').lua_ls.setup(lua_opts)
 					end,
+                                  --       rust_analyzer = function ()
+                                  --               -- local rust_opts = lsp_zero.rust_analyzer()
+		                                -- vim.g.rust_recommended_style = false
+                                  --               -- require('lspconfig').rust_analyzer.setup()
+                                  --       end
 				}
 			})
 		end
