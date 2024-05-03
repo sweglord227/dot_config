@@ -135,6 +135,8 @@ alias ip='ip -c'
 alias time='/usr/bin/time'
 alias fetch='fastfetch'
 
+alias c='cargo'
+
 eval "$(zoxide init --cmd cd zsh)"
 
 # PS1='\[\e[1;00m\]┌──\[\e[1;32m\][\u@\h]\[\e[1;00m\]─\[\e[1;37m\](\w)\n\[\e[1;00m\]└─\[\e[0;00m\]\$ '
