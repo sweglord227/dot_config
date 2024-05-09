@@ -8,8 +8,8 @@ local cmd = vim.cmd
 -- map.set("n", "<C-p>", cmd.tabclose)
 
 -- Folds
-map.set("n", "<leader>j", "zM")
-map.set("n", "<leader>k", "zR")
+-- map.set("n", "<leader>j", "zM")
+-- map.set("n", "<leader>k", "zR")
 
 -- Telescope
 local builtin = require('telescope.builtin')
