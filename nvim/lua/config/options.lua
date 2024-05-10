@@ -8,9 +8,9 @@ opt.nu = true
 opt.cursorline = true
 
 -- Tabs / Indens
-opt.tabstop = 8
-opt.softtabstop = 8
-opt.shiftwidth = 8
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.shiftwidth = 4
 opt.expandtab = true
 opt.smartindent = true
 
@@ -30,12 +30,10 @@ vim.wo.relativenumber = true
 
 vim.api.nvim_set_option("clipboard","unnamedplus")
 
-opt.foldmethod = "expr"
-
-opt.foldexpr = "nvim_treesitter#foldexpr()"
-
-opt.foldcolumn = '1'
-
-opt.foldlevel = 99
+-- Folds
+-- opt.foldmethod = "expr"
+-- opt.foldexpr = "nvim_treesitter#foldexpr()"
+-- opt.foldcolumn = '1'
+-- opt.foldlevel = 99
 
 -- opt.fillchars = 
