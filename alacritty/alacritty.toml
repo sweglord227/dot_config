@@ -5,14 +5,16 @@ blinking = "Always"
 shape = "Block"
 
 [font]
-# size = 14.0
+size = 16.0
 
 [font.normal]
+# family = "BigBlueTermPlus Nerd Font"
+# family = "ComicShannsMonoNerdFontPropo"
 family = "CozetteHiDpi"
 # family = "Monospace"
 
 [window]
 dynamic_padding = true
-opacity = 0.4
+opacity = 0.85
 resize_increments = true
 title = "Terminal"
