@@ -28,7 +28,7 @@ opt.undofile = true
 
 vim.wo.relativenumber = true
 
-vim.api.nvim_set_option("clipboard","unnamedplus")
+vim.opt.clipboard = "unnamedplus"
 
 -- Folds
 -- opt.foldmethod = "expr"
@@ -37,3 +37,10 @@ vim.api.nvim_set_option("clipboard","unnamedplus")
 -- opt.foldlevel = 99
 
 -- opt.fillchars = 
+
+-- Shell Settings
+vim.opt.sh = "nu"
+vim.opt.shellredir = '| save %s'
+vim.opt.shellcmdflag = "-c"
+vim.opt.shellquote = ""
+vim.opt.shellxquote = ""

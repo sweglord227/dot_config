@@ -79,6 +79,13 @@ return {
 		'neovim/nvim-lspconfig',
 		cmd = {'LspInfo', 'LspInstall', 'LspStart'},
 		event = {'BufReadPre', 'BufNewFile'},
+        init_options = {
+            userLanguages = {
+                eelixir = "html-eex",
+                eruby = "erb",
+                rust = "html",
+            }
+        },
 		dependencies = {
 			{'hrsh7th/cmp-nvim-lsp'},
 			{'williamboman/mason-lspconfig.nvim'},
@@ -90,6 +97,7 @@ return {
 			-- This is where all the LSP shenanigans will live
 			local lsp_zero = require('lsp-zero')
 			lsp_zero.extend_lspconfig()
+            require'lspconfig'.nushell.setup{}
 
 			lsp_zero.on_attach(function(client, bufnr)
 				-- see :help lsp-zero-keybindings
