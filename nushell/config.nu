@@ -889,22 +889,30 @@ $env.config = {
     ]
 }
 
-# if ($env | get -i HYPRLAND_CMD) == null {
-#     Hyprland
-# }
+# Forcefully kill processes by matching their name. CAN KILL LOTS
+def pkillf [name: string] {
+    for process in (ps | find $name) {
+        kill $process.pid --force
+    }
+}
 
-# alias cat = bat
+# Kill processes by matching their name.
+def pkill [name: string] {
+    for process in (ps | find $name) {
+        kill $process.pid
+    }
+}
+
 alias grep = rg
 alias cw = bacon run
 alias ci = cargo info
 alias cinstall = cargo binstall
 alias copy = wl-copy
 alias paste = wl-paste
-# alias config hypr = $env.EDITOR ~/.config/hypr/hyprland.conf
 
 # CLI nicities
 source ~/.config/nushell/zoxide.nu
-source ~/.local/share/atuin/init.nu
+source ~/.config/nushell/atuin.nu
 
 # Completion
 source ~/.config/nushell/completions/git.nu
